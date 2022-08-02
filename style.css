@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,100&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #BEE7E8;
+}
+
+a:hover {
+    color: azure;
+}
+
+header {
+    background-color: #726DA8;
+    color: #BEE7E8;
+}
+
+main {
+    background-color: #BEE7E8;
+}
+
+
+
+/* *************************** LOGO ***************************
+ */
+ .animated-logo {
+    width: 44px;
+    height: 44px;
+    animation: animated-logo 2s infinite ease;
+    transform-style: preserve-3d;
+   }
+   
+   .animated-logo div {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    border: 2px solid #BEE7E8;
+   }
+
+   .animated-logo div:hover {
+    border: 4px solid azure;
+    cursor: pointer;
+   }
+
+   .animated-logo div:nth-child(1) {
+    transform: translateZ(-22px) rotateY(180deg);
+   }
+   
+   .animated-logo div:nth-child(2) {
+    transform: rotateY(-270deg) translateX(50%);
+    transform-origin: top right;
+   }
+   
+   .animated-logo div:nth-child(3) {
+    transform: rotateY(270deg) translateX(-50%);
+    transform-origin: center left;
+   }
+   
+   .animated-logo div:nth-child(4) {
+    transform: rotateX(90deg) translateY(-50%);
+    transform-origin: top center;
+   }
+   
+   .animated-logo div:nth-child(5) {
+    transform: rotateX(-90deg) translateY(50%);
+    transform-origin: bottom center;
+   }
+   
+   .animated-logo div:nth-child(6) {
+    transform: translateZ(22px);
+   }
+   
+   @keyframes animated-logo {
+    0% {
+     transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+    }
+   
+    50% {
+     transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+    }
+   
+    100% {
+     transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+    }
+   }
+
+/* 
+******************* END ************************ */
+
+#wrapper-one, #wrapper-two, #wrapper-three {
+    max-width: 1280px;
+    margin: auto;
+    padding: 2rem;
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+#logo {
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    
+}
+
+#title-container {
+    max-width: 360px;
+    padding: 1rem;
+    height: 360px;
+}
+
+#title-container h1 {
+    margin-bottom: 0;
+    margin-top: 3rem;
+    font-size: 4rem;
+    line-height: 3.5rem;
+}
+
+#title-container p {
+    margin-bottom: 0;
+    margin-top: 1rem;
+    line-height: 1rem;
+    font-weight: 100;
+    opacity: 75%;
+}
+
+#btn {
+    width: 8rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: 0.2rem solid #BEE7E8 ;
+    background-color: #726DA8;
+    color: #BEE7E8;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8%;
+    cursor: pointer;
+}
+
+#btn:hover {
+    color: azure;
+    border: 0.2rem solid azure ;
+
+}
+
+#section-one-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#main-title {
+    padding: 0;
+    margin: auto;
+    color: #726DA8;
+}
+
+#section-two-container, #section-two-container-text, #wrapper-three {
+    width: 720px;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-two-container {
+    margin-top: 2rem;
+}
+
+#section-two-container-text {
+    line-height: 1rem;
+    margin: auto;
+}
+
+.random-cube {
+    width: 160px;
+    height: 160px;
+    border: 0.3rem solid #726DA8;
+    border-radius: 1rem;
+}
+
+#wrapper-two, #wrapper-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #726DA8;
+    color: azure;
+    font-size: 1rem;
+}
+
+#section-three-container {
+    background-color: azure;
+}
+
+#quote-container {
+    padding: 3rem;
+    text-align: right;
+    color: #726DA8;
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
